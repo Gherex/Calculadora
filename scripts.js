@@ -106,7 +106,9 @@ calculadora.addEventListener("click", function(event) {
           document.getElementById("renglon2").innerHTML = "Error de tipeo";
         }
       } else {
-        document.getElementById("renglon2").innerHTML = "No termina en numero";
+        if (cadena.length !== 0){
+          document.getElementById("renglon2").innerHTML = "No termina en numero";
+        }
       }  
     } else if (valor=="C") {
       cadena = [];
